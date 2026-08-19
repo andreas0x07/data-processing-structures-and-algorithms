@@ -3,7 +3,11 @@ package com.andreas.dsa.util;
 import java.util.Objects;
 import java.util.Random;
 
-public class ArrayUtils {
+public final class ArrayUtils {
+    private ArrayUtils() {
+        throw new UnsupportedOperationException("Utility class cannot be instantiated");
+    }
+
     private static final Random RANDOM = new Random();
 
     // Fills out array 'a' in ascending order
